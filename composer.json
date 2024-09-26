@@ -1,5 +1,5 @@
 {
-    "name": "kalov/donjon",
+    "name": "peaumm/donjon",
     "require": {
         "jugid/staurie": "^1.1"
     },
@@ -10,8 +10,8 @@
     },
     "authors": [
         {
-            "name": "Richard-Cambe",
-            "email": "richard.cambe@outlook.fr"
+            "name": "Peaumm",
+            "email": "maxence.fouquet@gmail.com"
         }
     ]
 }
