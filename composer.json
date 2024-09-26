@@ -1,11 +1,11 @@
 {
-    "name": "kalov/donjon",
+    "name": "peaumm/donjon",
     "require": {
         "jugid/staurie": "^1.1"
     },
     "autoload": {
         "psr-4": {
-            "Kalov\\Donjon\\": "src/"
+            "Peaumm\\Donjon\\": "src/"
         }
     },
     "authors": [
