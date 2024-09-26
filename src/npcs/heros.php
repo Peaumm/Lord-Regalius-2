@@ -24,9 +24,18 @@ class Heros extends Joueur {
         return 1 + $EquippedArmor;
     }
 
+    public function precision(): int {
+        return 10;
+    }
+
+    public function speed(): int {
+        return 3 + $equippedArmor;
+    }
+
     public function skills(): array { 
         return [
             "Coup d'Epée" => 3 + $equippedWeapon,
+            "Magie" => 3 + $equippedSpell
         ];
     }
 }
