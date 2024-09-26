@@ -1,17 +1,17 @@
 {
-    "name": "peaumm/donjon",
+    "name": "kalov/donjon",
     "require": {
         "jugid/staurie": "^1.1"
     },
     "autoload": {
         "psr-4": {
-            "Peaumm\\Donjon\\": "src/"
+            "Kalov\\Donjon\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Peaumm",
-            "email": "maxence.fouquet@gmail.com"
+            "name": "Richard-Cambe",
+            "email": "richard.cambe@outlook.fr"
         }
     ]
 }
