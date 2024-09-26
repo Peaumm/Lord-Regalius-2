@@ -1,0 +1,17 @@
+{
+    "name": "peaumm/donjon",
+    "require": {
+        "jugid/staurie": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Peaumm\\Donjon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Peaumm",
+            "email": "maxence.fouquet@gmail.com"
+        }
+    ]
+}
