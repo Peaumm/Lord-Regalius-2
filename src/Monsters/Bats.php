@@ -2,7 +2,7 @@
 
 namespace Peaumm\Donjon\Monsters;
 
-use Jugid\Staurie\Game\Monster;
+use Peaumm\Donjon\Game\Monster;
 
 class Bats extends Monster {
     
