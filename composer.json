@@ -1,5 +1,5 @@
 {
-    "name": "peaumm/donjon",
+    "name": "kalov/donjon",
     "require": {
         "jugid/staurie": "^1.1"
     },
