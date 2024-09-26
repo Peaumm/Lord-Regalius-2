@@ -26,19 +26,19 @@ $menu = $container->registerComponent(Menu::class);
 $menu->configuration([
   'text'=> 'Bienvenue sur Lord Regalius 2',
   'labels'=> [
-    'new_game' => 'Entrer dans le monde',
+    'new_game' => 'Commencer',
     'quit'=> 'Quitter le jeu',
   ]
 ]);
 
-$map = $container->registerComponent(Map::class);
-$map->configuration([
-    'directory'=>__DIR__.'/maps',
-    'namespace'=>'Jugid\Staurie\Example\Maps', 
-    'navigation'=>true,
-    'map_enable'=>true,
-    'compass_enable'=>true
-]);
+// $map = $container->registerComponent(Map::class);
+// $map->configuration([
+//     'directory'=>__DIR__.'/maps',
+//     'namespace'=>'Jugid\Staurie\Example\Maps', 
+//     'navigation'=>true,
+//     'map_enable'=>true,
+//     'compass_enable'=>true
+// ]);
 
 $introduction = $container->registerComponent(Introduction::class);
 $introduction->configuration([
