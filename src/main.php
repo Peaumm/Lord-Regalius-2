@@ -8,6 +8,7 @@ use Jugid\Staurie\Component\Map\Map;
 use Jugid\Staurie\Component\Menu\Menu;
 use Jugid\Staurie\Component\PrettyPrinter\PrettyPrinter;
 use Jugid\Staurie\Staurie;
+use Peaumm\Donjon\Components\Combat\Combat;
 
 require_once '../vendor/autoload.php';
 
@@ -17,7 +18,8 @@ $staurie->register([
   PrettyPrinter::class, 
   MainCharacter::class, 
   Inventory::class,
-  Menu::class
+  Menu::class,
+  Combat::class
 ]);
 
 $container = $staurie->getContainer();
