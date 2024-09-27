@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9106ae1757441cf848633dca3a8920a7",
+    "content-hash": "f541cba2be0d079a45156190361787e2",
     "packages": [
         {
             "name": "jugid/staurie",
-            "version": "1.1.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JuGid/Staurie.git",
-                "reference": "b31baa2a363b626f257e98136d9b2c29a61468b0"
+                "reference": "a7ded73ed55cc199f9a5cd249ccf107232e79a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JuGid/Staurie/zipball/b31baa2a363b626f257e98136d9b2c29a61468b0",
-                "reference": "b31baa2a363b626f257e98136d9b2c29a61468b0",
+                "url": "https://api.github.com/repos/JuGid/Staurie/zipball/a7ded73ed55cc199f9a5cd249ccf107232e79a92",
+                "reference": "a7ded73ed55cc199f9a5cd249ccf107232e79a92",
                 "shasum": ""
             },
             "require": {
@@ -46,9 +46,9 @@
             "description": "Create your own story",
             "support": {
                 "issues": "https://github.com/JuGid/Staurie/issues",
-                "source": "https://github.com/JuGid/Staurie/tree/1.1.0"
+                "source": "https://github.com/JuGid/Staurie/tree/1.1.4"
             },
-            "time": "2024-09-25T17:36:48+00:00"
+            "time": "2024-09-27T09:43:55+00:00"
         },
         {
             "name": "symfony/finder",
@@ -123,5 +123,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
