@@ -15,6 +15,13 @@ use Peaumm\Donjon\Monsters\Imps;
 use Peaumm\Donjon\Monsters\Zombies;
 
 class Combat extends AbstractComponent {
+
+  private array $monsterMap = [
+    'bats' => Bats::class,
+    'mimic' => Mimic::class,
+    'imps' => Imps::class,
+    'zombies' => Zombies::class
+];
   
   public function getEventName(): array { 
     return [
@@ -37,7 +44,8 @@ class Combat extends AbstractComponent {
     $pp = $this->container->getPrettyPrinter();
     $pp->writeln("Bonjour $monster");
   
-    $target = new Mimic;
+    $monsterClass = $this->monsterMap[strtolower($monster)];
+    $target = new $monsterClass;
     $target->setContainer($this->container);
 
     $pp->writeLn($target->attack());
