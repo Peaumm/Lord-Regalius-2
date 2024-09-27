@@ -1,26 +1,24 @@
 <?php
-
 namespace Peaumm\Donjon\Monsters;
 
-use Peaumm\Donjon\Component\Character\MainCharacter;
-use Peaumm\Donjon\Game\Monster;
+use Jugid\Staurie\Game\Monster;
 
-class Bats extends Monster {
+class Zombies extends Monster {
     
     public function name() : string {
-        return 'Bats';
+        return 'Zombies';
     }
 
     public function description(): string { 
-        return "Vous sentez une présence, puis un battement d'ailes au-dessus de vous. En levant les yeux, vous découvrez une chauve-souris colossale, ses crocs prêts à mordre.";
+        return 'Une odeur pestilentielle vous submerge, et bientôt la source de cette puanteur se révèle : un zombie se traîne vers vous';
     }
 
     public function health_points(): int { 
-        return 8;
+        return 12;
     }
 
     public function defense(): int { 
-        return 1;
+        return 3;
     }
 
     public function magickadefense(): int { 
@@ -28,20 +26,20 @@ class Bats extends Monster {
     }
 
     public function attack(): int { 
-        return 2;
-    }
-
-    public function dodge(): int { 
         return 3;
     }
 
+    public function dodge(): int { 
+        return 1;
+    }
+
     public function magickaattack(): int { 
-        return 0;
+        return 1;
     }
 
     public function skills(): array { 
         return [
-            'Bite' => 2,
+            'Bite' => 3,
         ];
     }
 
@@ -58,8 +56,8 @@ class Bats extends Monster {
 
             $chance = rand(1, 100); 
             if ($chance <= 15) {
-                $target->applyStatusEffect('poison');
-                echo "{$target->name()} est empoisonné!\n";
+                $target->applyStatusEffect('putrefaction');
+                echo "La Chair de {$target->name()} commence à se putrefier !\n";
             }
         }
     }
