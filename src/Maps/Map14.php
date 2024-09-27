@@ -4,6 +4,7 @@ namespace Peaumm\Donjon\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use Peaumm\Donjon\Monsters\AnimatedArmor;
 
 class Map14 extends Blueprint {
 
@@ -35,6 +36,6 @@ class Map14 extends Blueprint {
     }
 
     public function monsters() : array {
-        return ['AnimatedArmor'];
+        return [ new AnimatedArmor()];
     }
 }

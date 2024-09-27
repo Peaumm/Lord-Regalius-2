@@ -4,6 +4,7 @@ namespace Peaumm\Donjon\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use Peaumm\Donjon\Monsters\Mimic;
 
 class Map01 extends Blueprint {
 
@@ -31,10 +32,10 @@ class Map01 extends Blueprint {
     }
 
     public function items() : array {
-        return ['Coffre'];
+        return [];
     }
 
     public function monsters() : array {
-        return ['Mimic'];
+        return [new Mimic()];
     }
 }

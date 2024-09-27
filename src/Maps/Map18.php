@@ -11,11 +11,11 @@ class Map18 extends Blueprint {
 
     public function __construct()
     {
-        $this->position = new Position(11,11);
+        $this->position = new Position(5,2);
     }
 
     public function name() : string {
-        return 'MapVide3';
+        return 'SalleCachée3';
     }
 
     public function description() : string {

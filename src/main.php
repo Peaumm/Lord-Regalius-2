@@ -17,7 +17,6 @@ $staurie->register([
   PrettyPrinter::class, 
   MainCharacter::class, 
   Inventory::class,
-  Menu::class
 ]);
 
 $container = $staurie->getContainer();

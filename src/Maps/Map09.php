@@ -4,6 +4,7 @@ namespace Peaumm\Donjon\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use Peaumm\Donjon\Monsters\Zombies;
 
 class Map09 extends Blueprint {
 
@@ -35,6 +36,6 @@ class Map09 extends Blueprint {
     }
 
     public function monsters() : array {
-        return ['Zombie'];
+        return [new Zombies()];
     }
 }

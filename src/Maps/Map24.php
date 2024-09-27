@@ -5,6 +5,7 @@ namespace Peaumm\Donjon\Maps;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 
+
 class Map24 extends Blueprint {
 
     private Position $position;
@@ -35,6 +36,6 @@ class Map24 extends Blueprint {
     }
 
     public function monsters() : array {
-        return ['LordRegalius'];
+        return [];
     }
 }
