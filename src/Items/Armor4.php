@@ -4,23 +4,24 @@ namespace Peaumm\Donjon\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Cape extends Item_Equippable {
+class Armor4 extends Item_Equippable {
 
   public function name() : string { 
-    return 'Cape';
+    return 'Armure_Bénie';
   }
 
   public function description(): string {
-    return 'Essential accessory';
+    return 'Rusty but solid';
    }
   
   public function body_part(): string {
-    return 'back';
+    return 'fullbody';
    }
   
   public function statistics(): array { 
     return [
-      'VIT'=> 3
+      'DEF'=> 10,
+      'DEFMAGK'=>10
     ];
   }
 }

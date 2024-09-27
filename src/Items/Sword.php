@@ -1,13 +1,13 @@
 <?php
 
-namespace Peaunmm\Donjon\Items;
+namespace Peaumm\Donjon\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
-
+use Peaumm\Donjon\Game\AttackRand;
 class Sword extends Item_Equippable {
 
   public function name() : string { 
-    return 'Sword';
+    return 'Epée';
   }
 
   public function description(): string {
@@ -20,7 +20,7 @@ class Sword extends Item_Equippable {
   
   public function statistics(): array { 
     return [
-      'attack'=> rand(5,8)
+      'ATK'=> 6
     ];
   }
 }
