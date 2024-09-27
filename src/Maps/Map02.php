@@ -15,7 +15,7 @@ class Map02 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Hall (Ouest)';
+        return 'Hall(Ouest)';
     }
 
     public function description() : string {

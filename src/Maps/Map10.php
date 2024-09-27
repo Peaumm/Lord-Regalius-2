@@ -15,7 +15,7 @@ class Map10 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Hall';
+        return 'Hall(Suite)';
     }
 
     public function description() : string {

@@ -15,7 +15,7 @@ class Map04 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Hall (Est)';
+        return 'Hall(Est)';
     }
 
     public function description() : string {
