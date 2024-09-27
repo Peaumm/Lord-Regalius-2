@@ -1,15 +1,15 @@
 <?php
 
+use Peaumm\Donjon\Components\Character\MainCharacter;
 use Jugid\Staurie\Component\Console\Console;
+use Jugid\Staurie\Component\Introduction\Introduction;
+use Jugid\Staurie\Component\Inventory\Inventory;
+use Jugid\Staurie\Component\Map\Map;
 use Jugid\Staurie\Component\Menu\Menu;
 use Jugid\Staurie\Component\PrettyPrinter\PrettyPrinter;
-use Jugid\Staurie\Component\Inventory\Inventory;
-use Jugid\Staurie\Component\Character\MainCharacter;
-use Jugid\Staurie\Component\Introduction\Introduction;
-use Jugid\Staurie\Component\Map\Map;
 use Jugid\Staurie\Staurie;
 
-require_once '../vendor/autoload.php'; //A REMPLACER
+require_once '../vendor/autoload.php';
 
 $staurie = new Staurie('Lord Regalius 2');
 $staurie->register([
@@ -33,8 +33,8 @@ $menu->configuration([
 
 $map = $container->registerComponent(Map::class);
 $map->configuration([
-    'directory'=>__DIR__.'/maps',
-    'namespace'=>'Jugid\Staurie\Example\Maps', 
+    'directory'=>__DIR__.'/Maps',
+    'namespace'=>'Peaumm\Donjon\Maps',
     'navigation'=>true,
     'map_enable'=>true,
     'compass_enable'=>true

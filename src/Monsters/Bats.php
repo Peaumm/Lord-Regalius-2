@@ -2,8 +2,8 @@
 
 namespace Peaumm\Donjon\Monsters;
 
-use Jugid\Staurie\Game\Monster;
-use Jugid\Staurie\Component\Character\MainCharacter;
+use Peaumm\Donjon\Component\Character\MainCharacter;
+use Peaumm\Donjon\Game\Monster;
 
 class Bats extends Monster {
     
