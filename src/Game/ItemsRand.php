@@ -7,7 +7,7 @@ use Peaumm\Donjon\Items\Armor;
 use Peaumm\Donjon\Items\Armor2;
 use Peaumm\Donjon\Items\Armor3;
 use Peaumm\Donjon\Items\Armor4;
-use Peaumm\Donjon\Items\Costume_Regalia;
+use Peaumm\Donjon\Items\Armor5;
 use Peaumm\Donjon\Items\Sword;
 use Peaumm\Donjon\Items\Sword2;
 use Peaumm\Donjon\Items\Sword3;
@@ -25,7 +25,7 @@ class ItemsRand {
       new Armor2(),
       new Armor3(),
       new Armor4(),
-      new Costume_Regalia(),
+      new Armor5(),
       new Sword(),
       new Sword2(),
       new Sword3(),
