@@ -1,7 +1,7 @@
 <?php
 namespace Peaumm\Donjon\Monsters;
 
-use Jugid\Staurie\Game\Monster;
+use Peaumm\Donjon\Game\Monster;
 
 /* 
 Mimique : 50PV / 6DEF+MGK / 12ATK / 1 ESQ

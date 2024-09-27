@@ -1,7 +1,7 @@
 <?php
 namespace Peaumm\Donjon\Monsters;
 
-use Jugid\Staurie\Game\Monster;
+use Peaumm\Donjon\Game\Monster;
 
 /* 
 Diablotin : 25PV / 5 DEF / 3DEFMGK / 5 ATK / 8ATKMGK / 1 ESQ

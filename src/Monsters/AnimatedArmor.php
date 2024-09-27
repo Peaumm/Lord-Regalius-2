@@ -1,7 +1,7 @@
 <?php
 namespace Peaumm\Donjon\Monsters;
 
-use Jugid\Staurie\Game\Monster;
+use Peaumm\Donjon\Game\Monster;
 
 /* 
 Armure Vivante : 40PV / 6DEF+MGK / 8ATK+MGK / 1 ESQ
