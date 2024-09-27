@@ -35,6 +35,6 @@ class Map05 extends Blueprint {
     }
 
     public function monsters() : array {
-        return ['imps'];
+        return ['Imps'];
     }
 }
