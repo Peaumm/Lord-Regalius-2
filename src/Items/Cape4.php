@@ -4,10 +4,10 @@ namespace Peaumm\Donjon\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Cape extends Item_Equippable {
+class Cape4 extends Item_Equippable {
 
   public function name() : string { 
-    return 'Cape';
+    return 'Cape_Oeira';
   }
 
   public function description(): string {
@@ -20,7 +20,8 @@ class Cape extends Item_Equippable {
   
   public function statistics(): array { 
     return [
-      'VIT'=> 3
+      'VIT'=> 6,
+      'PRE'=>2
     ];
   }
 }

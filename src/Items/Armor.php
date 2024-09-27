@@ -1,13 +1,13 @@
 <?php
 
-namespace Peaunmm\Donjon\Items;
+namespace Peaumm\Donjon\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
 class Armor extends Item_Equippable {
 
   public function name() : string { 
-    return 'Armor';
+    return 'Armure_Rouillé';
   }
 
   public function description(): string {
@@ -15,14 +15,14 @@ class Armor extends Item_Equippable {
    }
   
   public function body_part(): string {
-    return 'body';
+    return 'fullbody';
    }
   
   public function statistics(): array { 
     return [
-      'HP'=> 5,
-      'defense'=> 5, 
-      'magic defense'=> 3
+      'PV'=> 5,
+      'DEF'=> 5, 
+      'DEFMAGK'=> 3
     ];
   }
 }
