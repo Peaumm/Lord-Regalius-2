@@ -99,18 +99,15 @@ class MainCharacter extends AbstractComponent {
     }
 
     final protected function new() {
-        $this->name = readline('Character name : ');
-        $this->gender = readline('Character gender : ');
 
         $pp = $this->container->getPrettyPrinter();
-        $pp->writeLn('Welcome ' . $this->name, 'green');
+        $pp->writeLn('Bienvenue Lui', 'green');
     }
 
     final protected function me() {
         $pp = $this->container->getPrettyPrinter();
         $pp->writeUnder('Details', 'green');
         $pp->writeLn('Name : ' . $this->name);
-        $pp->writeLn('Gender : ' . $this->gender);
 
         $pp->writeUnder("\nYour equipment", 'green');
         $header = ['Body part', 'Name', 'Statistics'];
