@@ -7,7 +7,7 @@ use Jugid\Staurie\Game\Item_Equippable;
 class Armor extends Item_Equippable {
 
   public function name() : string { 
-    return 'Armure_Rouillé';
+    return 'Armure_Rouillée';
   }
 
   public function description(): string {
