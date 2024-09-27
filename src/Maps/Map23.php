@@ -15,11 +15,11 @@ class Map23 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château23';
+        return 'Escaliers';
     }
 
     public function description() : string {
-        return '';
+        return "Il y a de la lumière en haut de l'escalier";
     }
 
     public function position() : Position {

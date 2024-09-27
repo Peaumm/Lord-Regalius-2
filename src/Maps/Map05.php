@@ -15,11 +15,11 @@ class Map05 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château5';
+        return 'Petit salon (Est)';
     }
 
     public function description() : string {
-        return '';
+        return 'Vous entrez dans un petit salon, une odeur étrange hante les lieux';
     }
 
     public function position() : Position {

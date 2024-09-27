@@ -15,11 +15,11 @@ class Map13 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château13';
+        return 'Grand salon';
     }
 
     public function description() : string {
-        return '';
+        return 'Une grande table avec de nombreuses chaises. Le lieu semble souvent utilisé';
     }
 
     public function position() : Position {

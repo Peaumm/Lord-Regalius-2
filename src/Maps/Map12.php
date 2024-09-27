@@ -15,11 +15,11 @@ class Map12 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château12';
+        return 'Escaliers vers les cachots';
     }
 
     public function description() : string {
-        return '';
+        return 'Un escalier sombre qui descend vers les cachots';
     }
 
     public function position() : Position {

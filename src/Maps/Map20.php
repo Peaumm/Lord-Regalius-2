@@ -15,11 +15,11 @@ class Map20 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château20';
+        return 'Réserves';
     }
 
     public function description() : string {
-        return '';
+        return 'Vous vous trouvez devant de nombreuses fioles et bandages. Un grimoire est posé sur une table';
     }
 
     public function position() : Position {

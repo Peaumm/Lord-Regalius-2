@@ -15,11 +15,11 @@ class Map21 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château21';
+        return 'Chambre (Est)';
     }
 
     public function description() : string {
-        return '';
+        return 'Un grand lit, miteux, et de vieux meubles. Ils étaient probablement magnifiques.. il y a 500ans...';
     }
 
     public function position() : Position {

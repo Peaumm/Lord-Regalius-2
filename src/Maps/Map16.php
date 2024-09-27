@@ -15,11 +15,11 @@ class Map16 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château16';
+        return 'Cachots (Entrée)';
     }
 
     public function description() : string {
-        return '';
+        return "L'entrée des cachots emplit vos narines de son odeur nauséabonde. Qu'est-ce que vous foutez là ?";
     }
 
     public function position() : Position {

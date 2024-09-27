@@ -15,11 +15,11 @@ class Map14 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château14';
+        return 'Grand salon (Nord)';
     }
 
     public function description() : string {
-        return '';
+        return 'Une grande table avec de nombreuses chaises. Le lieu semble souvent utilisé';
     }
 
     public function position() : Position {

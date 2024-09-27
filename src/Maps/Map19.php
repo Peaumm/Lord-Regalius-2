@@ -15,11 +15,11 @@ class Map19 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château19';
+        return 'Couloir sombre';
     }
 
     public function description() : string {
-        return '';
+        return 'On y voit quasimment rien... ';
     }
 
     public function position() : Position {

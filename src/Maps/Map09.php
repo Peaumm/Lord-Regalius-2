@@ -15,11 +15,11 @@ class Map09 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château9';
+        return 'Cachots';
     }
 
     public function description() : string {
-        return '';
+        return "C'est sale et ca pue. Le sol humide vous dégoute un peu.. Un mélange de détritus, de sang, et de plein d'autres choses...";
     }
 
     public function position() : Position {

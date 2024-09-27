@@ -15,11 +15,11 @@ class Map04 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château4';
+        return 'Hall (Est)';
     }
 
     public function description() : string {
-        return '';
+        return 'Vous avancez dans le hall';
     }
 
     public function position() : Position {

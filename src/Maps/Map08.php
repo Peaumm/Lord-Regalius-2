@@ -15,11 +15,11 @@ class Map08 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château8';
+        return 'Fond des cachots';
     }
 
     public function description() : string {
-        return '';
+        return 'Vous trouvez une femme enchaînée, elle semble à moitié vivante, ou a moitié morte...';
     }
 
     public function position() : Position {

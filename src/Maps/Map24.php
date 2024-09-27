@@ -15,11 +15,11 @@ class Map24 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Château24';
+        return 'Salle du Trône';
     }
 
     public function description() : string {
-        return '';
+        return 'Lorsque vous entrez dans la salle du trône, vous trouvez le seigneur Regalius en pleine invocation de ses servants.';
     }
 
     public function position() : Position {
