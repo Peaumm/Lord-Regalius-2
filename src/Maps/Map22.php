@@ -15,7 +15,7 @@ class Map22 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Empty';
+        return 'MapVide4';
     }
 
     public function description() : string {

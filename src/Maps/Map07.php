@@ -15,7 +15,7 @@ class Map07 extends Blueprint {
     }
 
     public function name() : string {
-        return 'empty';
+        return 'MapVide1';
     }
 
     public function description() : string {

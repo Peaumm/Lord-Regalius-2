@@ -15,7 +15,7 @@ class Map18 extends Blueprint {
     }
 
     public function name() : string {
-        return 'empty';
+        return 'MapVide3';
     }
 
     public function description() : string {
