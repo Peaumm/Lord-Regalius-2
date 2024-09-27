@@ -27,7 +27,7 @@ class Map08 extends Blueprint {
     }
 
     public function npcs() : array {
-        return [];
+        return [Meuf];
     }
 
     public function items() : array {

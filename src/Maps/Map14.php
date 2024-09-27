@@ -35,6 +35,6 @@ class Map14 extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return ['AnimatedArmor'];
     }
 }

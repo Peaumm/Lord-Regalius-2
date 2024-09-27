@@ -31,7 +31,7 @@ class Map20 extends Blueprint {
     }
 
     public function items() : array {
-        return [];
+        return ['Potions', 'Bandages', 'Book'];
     }
 
     public function monsters() : array {

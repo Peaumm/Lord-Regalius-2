@@ -35,6 +35,6 @@ class Map09 extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return ['zombie'];
     }
 }

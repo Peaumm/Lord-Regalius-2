@@ -35,6 +35,6 @@ class Map24 extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return ['LordRegalius'];
     }
 }

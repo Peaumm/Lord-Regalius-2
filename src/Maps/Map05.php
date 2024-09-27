@@ -31,10 +31,10 @@ class Map05 extends Blueprint {
     }
 
     public function items() : array {
-        return [];
+        return ['Coffre'];
     }
 
     public function monsters() : array {
-        return [];
+        return ['imps'];
     }
 }
