@@ -4,6 +4,7 @@ namespace Peaumm\Donjon\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use Peaumm\Donjon\Monsters\Skeletons;
 
 class Map10 extends Blueprint {
 
@@ -15,7 +16,7 @@ class Map10 extends Blueprint {
     }
 
     public function name() : string {
-        return 'Hall';
+        return 'Hall(Suite)';
     }
 
     public function description() : string {
@@ -35,6 +36,6 @@ class Map10 extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return [new Skeletons()];
     }
 }

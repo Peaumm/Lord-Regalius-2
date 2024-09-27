@@ -4,6 +4,7 @@ namespace Peaumm\Donjon\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use Peaumm\Donjon\Monsters\AnimatedArmor;
 
 class Map13 extends Blueprint {
 
@@ -19,7 +20,7 @@ class Map13 extends Blueprint {
     }
 
     public function description() : string {
-        return 'Une grande table avec de nombreuses chaises. Le lieu semble souvent utilisé';
+        return 'Une grande table avec de nombreuses chaises. Le lieu semble souvent utilisé.';
     }
 
     public function position() : Position {
@@ -35,6 +36,6 @@ class Map13 extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return [new AnimatedArmor()];
     }
 }

@@ -5,7 +5,7 @@ use Peaumm\Donjon\Game\Monster;
 
 /* 
 - Coup d'épée */
-class Zombies extends Monster {
+class Skeletons extends Monster {
     
     public function name() : string {
         return 'Skeletons';
