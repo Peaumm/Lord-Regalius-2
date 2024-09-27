@@ -8,14 +8,14 @@ Armure Vivante : 40PV / 6DEF+MGK / 8ATK+MGK / 1 ESQ
 - Coup d'Epée
 Si le joueur attaque une Armure Vivante avec une arme dotée de magie ou un sort, il ignore DEF+MGK de l'Armure
 */
-class Mimic extends Monster {
+class AnimatedArmor extends Monster {
     
     public function name() : string {
         return 'AnimatedArmor';
     }
 
     public function description(): string { 
-        return "L’armure enchantée s’éveille dans un grincement de métal, son épée massive traînant sur le sol avant de se relever avec une menace silencieuse.";
+        return "L’armure-enchantée s’éveille dans un grincement de métal, son épée massive traînant sur le sol avant de se relever avec une menace silencieuse.";
     }
 
     public function health_points(): int { 
