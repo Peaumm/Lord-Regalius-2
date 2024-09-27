@@ -9,10 +9,12 @@ use Jugid\Staurie\Component\Character\Statistics;
 use Peaumm\Donjon\Components\Character\MainCharacter;
 use Peaumm\Donjon\Components\Combat\CoreFunctions\AttackFunction;
 use Peaumm\Donjon\Game\Monster;
+use Peaumm\Donjon\Monsters\Bats;
+use Peaumm\Donjon\Monsters\Mimic;
+use Peaumm\Donjon\Monsters\Imps;
+use Peaumm\Donjon\Monsters\Zombies;
 
 class Combat extends AbstractComponent {
-
-  public $theName;
   
   public function getEventName(): array { 
     return [
@@ -34,7 +36,11 @@ class Combat extends AbstractComponent {
   private function attack(string $monster) {
     $pp = $this->container->getPrettyPrinter();
     $pp->writeln("Bonjour $monster");
-    // $pp->writeLn(Monster::attack());
+  
+    $target = new Mimic;
+    $target->setContainer($this->container);
+
+    $pp->writeLn($target->attack());
   }
   
   public function name(): string { 
