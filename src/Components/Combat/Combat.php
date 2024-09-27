@@ -45,16 +45,18 @@ class Combat extends AbstractComponent {
 
   private function attack(string $monster) {
     $pp = $this->container->getPrettyPrinter();
-  
+    $stats = Statistics::default();
     $monsterClass = $this->monsterMap[strtolower($monster)];
     $target = new $monsterClass;
     $target->setContainer($this->container);
+    $hit = $stats->value('ATK') - $target->defense();
 
-    $pp->writeLn($target->health_points(), 'red');
-    // $statsPlayer = new Statistics();
+    $monsterHealth = $target->health_points() - $hit;
+    $pp->writeLn($monsterHealth);
+    
+    // var_dump($stats->sub('PV', 1));
+    // var_dump($stats->value('DEF'));
     // var_dump($statsPlayer->has('ATK'));
-    // var_dump($this->$statsPlayer->sub('PV', 1));
-    // var_dump($this->$statsPlayer->has('PV'));
   }
   
   public function name(): string { 
