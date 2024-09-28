@@ -5,13 +5,14 @@ namespace Peaumm\Donjon\Components\Combat;
 use Jugid\Staurie\Component\AbstractComponent;
 use Jugid\Staurie\Component\PrettyPrinter\PrettyPrinter;
 use Jugid\Staurie\Component\Console\Console;
-use Jugid\Staurie\Component\Character\Statistics;
-use Peaumm\Donjon\Components\Character\MainCharacter;
+use Peaumm\Donjon\Components\Character\Statistics;
 use Peaumm\Donjon\Components\Combat\CoreFunctions\AttackFunction;
 use Peaumm\Donjon\Game\Monster;
+use Peaumm\Donjon\Monsters\AnimatedArmor;
 use Peaumm\Donjon\Monsters\Bats;
 use Peaumm\Donjon\Monsters\Mimic;
 use Peaumm\Donjon\Monsters\Imps;
+use Peaumm\Donjon\Monsters\Skeletons;
 use Peaumm\Donjon\Monsters\Zombies;
 
 class Combat extends AbstractComponent {
@@ -20,8 +21,10 @@ class Combat extends AbstractComponent {
     'bats' => Bats::class,
     'mimic' => Mimic::class,
     'imps' => Imps::class,
-    'zombies' => Zombies::class
-];
+    'zombies' => Zombies::class,
+    'animated-armor' => AnimatedArmor::class,
+    'skeleton' => Skeletons::class
+  ];
   
   public function getEventName(): array { 
     return [
@@ -42,13 +45,18 @@ class Combat extends AbstractComponent {
 
   private function attack(string $monster) {
     $pp = $this->container->getPrettyPrinter();
-    $pp->writeln("Bonjour $monster");
-  
+    $stats = Statistics::default();
     $monsterClass = $this->monsterMap[strtolower($monster)];
     $target = new $monsterClass;
     $target->setContainer($this->container);
+    $hit = $stats->value('ATK') - $target->defense();
 
-    $pp->writeLn($target->attack());
+    $monsterHealth = $target->health_points() - $hit;
+    $pp->writeLn($monsterHealth);
+    
+    // var_dump($stats->sub('PV', 1));
+    // var_dump($stats->value('DEF'));
+    // var_dump($statsPlayer->has('ATK'));
   }
   
   public function name(): string { 
@@ -59,7 +67,7 @@ class Combat extends AbstractComponent {
     return [
 
     ];
-   }
+  }
 
   public function initialize(): void {
     $console = $this->container->getConsole();
@@ -68,6 +76,6 @@ class Combat extends AbstractComponent {
 
   final public function require() : array {
     return [Console::class, PrettyPrinter::class];
-   }
+  }
 
 }
